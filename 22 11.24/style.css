@@ -1,0 +1,20 @@
+.first {
+    background-color: red;
+    animation-duration: 2s;
+    animation-name: first;
+}
+
+@keyframes first {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.last {
+    background-color: green;
+    animation-duration: 2s;
+    animation-name: first;
+}
