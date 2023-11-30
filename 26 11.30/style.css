@@ -1,0 +1,11 @@
+body {margin:0px;}
+
+.block{
+    width: 100px;
+    height: 100px;
+    background:rgb(242, 222, 111);
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
