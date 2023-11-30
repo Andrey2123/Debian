@@ -1,0 +1,25 @@
+body {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.square {
+	width: 200px;
+	height: 200px;
+	background: blueviolet;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h3 {
+	color:crimson;
+	font-weight: bolder;
+	opacity: 0%;
+	font-size: 30px;
+}
+
