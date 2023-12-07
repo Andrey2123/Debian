@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0px;
+}
+
+body div {
+    border: 1px solid black;
+}
+
+.left-block {
+    float: left;
+    width: 25vw;
+}
+
+.middle-block {
+    float: left;
+    width: 50vw;
+    display: grid;
+    grid-template: repeat(3,100px)/repeat(3,100px);
+}
+
+.card {
+    border: 1px solid black;
+}
+
+.right-block {
+    float: right;
+    width: 25vw;
+}
