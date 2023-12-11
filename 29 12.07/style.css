@@ -10,21 +10,62 @@ body div {
 
 .left-block {
     float: left;
-    width: 25vw;
+    width:15vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-block__title {
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.list-item {
+    font-size: 20px;
+    list-style-type: none;
 }
 
 .middle-block {
     float: left;
-    width: 50vw;
+    width: 85vw;
     display: grid;
-    grid-template: repeat(3,100px)/repeat(3,100px);
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
 }
 
 .card {
     border: 1px solid black;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-text {
+    word-wrap: break-word;
+    width: 15vw;
+}
+
+.card-paragraph {
+    margin: 0px;
 }
 
 .right-block {
     float: right;
-    width: 25vw;
+    width:25vw;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.right-block__text {
+    word-wrap: break-word;
+    width: 15vw;
+}
+
+.right-block__button {
+    width: 5vw;
+    height: 7vh;
+}
+
