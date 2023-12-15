@@ -11,18 +11,21 @@ fetch(investorUrl)
 const files = ['investor', 'manager', 'assistant', 'worker'];
 const list = document.querySelector('ul');
 
-const myPromise = new Promise((resolve,reject)=>{
-
-    const success = true;
+const myPromise = new Promise((resolve)=>{
     files.forEach(element => {
         fetch(`${element}.json`)
         .then(response=>response.json())
-        .then(data => {
-        list.innerHTML+=`
-            <li>${data["sex"]}</li>
-            <li>${data["age"]} y.o</li>
-            <li>${data["dateOfBirth"]}</li>
-            <li></li>`;
-        });
+        .then(data=>{
+            list.innerHTML+=`
+            <ul>
+                <li>${data["age"]}</li>
+                <li>${data["sex"]}</li>
+                <li>${data["dateOfBirth"]}</li>
+            </ul>
+            `
+        })    
+        .then(console.log('Done!'))
+        .catch(console.log("Processing..."))
     });
 });
+
